@@ -86,3 +86,40 @@ input[type="checkbox"] {
 .copyright {
   height: 50px;
 }
+.bg-container {
+  height: 600px;
+  background-image: url("../img/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.bg-container .h-text-content-1 h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+.h-text-content-1 p {
+  font-size: 20px;
+}
+.sf-title {
+  height: 150px;
+}
+
+.card-img-top {
+  height: 350px;
+  width: 100%;
+}
+.card-img-top img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.location-container {
+  height: 600px;
+  background-image: url("../img/loc.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.location-box {
+  height: 500px;
+  background-color: rgba(250, 250, 250, 0.7);
+  width: 60%;
+}

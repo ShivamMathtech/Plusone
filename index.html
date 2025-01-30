@@ -18,8 +18,35 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(function () {
+        $(document).ready(function () {
+          $.ajax({
+            method: "GET",
+            url: "./pages/home.html",
+          }).then(function (response) {
+            $("#showpages").html(response);
+          });
+        });
+
+        $("#homeclick").click(function () {
+          $.ajax({
+            method: "GET",
+            url: "./pages/home.html",
+          }).then(function (response) {
+            $("#showpages").html(response);
+          });
+        });
+      });
+    </script>
   </head>
-  <body>
+  <body id="body">
     <div class="container-fluid main-container">
       <div class="container">
         <header class="header">
@@ -31,7 +58,9 @@
               class="col-md-10 d-flex justify-content-end align-items-center"
             >
               <ul class="nav">
-                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                  <a href="#home" class="nav-link" id="homeclick">Home</a>
+                </li>
                 <li class="nav-item">
                   <a href="" class="nav-link">Classes</a>
                 </li>
@@ -65,7 +94,7 @@
           </div>
         </div>
         <div class="container" id="showpages"></div>
-        <div class="container footer-area">
+        <div class="container footer-area mt-4">
           <div class="footer-title">
             <div class="row m-0 p-2">
               <div
@@ -225,12 +254,7 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
-      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

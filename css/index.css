@@ -123,3 +123,31 @@ input[type="checkbox"] {
   background-color: rgba(250, 250, 250, 0.7);
   width: 60%;
 }
+.story {
+  height: 300px;
+}
+.memory-container {
+  height: 500px;
+}
+.memory-content {
+  background-color: #e8eced;
+}
+.memory-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.memo-content-text {
+  height: 300px;
+  width: 90%;
+}
+.watch-container {
+  height: 300px;
+}
+.image-gal {
+  height: 200px;
+}
+.image-gal img {
+  height: 200px;
+  width: 100%;
+}

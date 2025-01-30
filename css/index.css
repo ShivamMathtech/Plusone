@@ -33,9 +33,6 @@
   min-height: 100vh;
 }
 
-.form-top-1 {
-  height: 50vh;
-}
 .footer-text-content-1 {
   height: 200px;
   width: 80%;
@@ -57,7 +54,35 @@
 }
 input[type="text"] {
   border: 1px solid #000;
+  background: transparent;
 }
 textarea[name="textareas"] {
   border: 1px solid #000;
+}
+.form-top-1 {
+  height: 400px;
+}
+.form-lower-1 {
+  height: 250px;
+  background-color: #e8eced;
+}
+.lower-content {
+  height: 200px;
+  width: 90%;
+}
+.lower-content .bi {
+  font-size: 20px;
+}
+input[type="checkbox"] {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+.subscribebtn {
+  height: 35px;
+  width: 100px;
+  border: none;
+  background-color: #cddbdb;
+}
+.copyright {
+  height: 50px;
 }

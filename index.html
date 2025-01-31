@@ -24,6 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./js/classes.js"></script>
     <script>
       $(function () {
         $(document).ready(function () {
@@ -39,6 +40,14 @@
           $.ajax({
             method: "GET",
             url: "./pages/home.html",
+          }).then(function (response) {
+            $("#showpages").html(response);
+          });
+        });
+        $("#classClick").click(function () {
+          $.ajax({
+            method: "GET",
+            url: "./pages/classes.html",
           }).then(function (response) {
             $("#showpages").html(response);
           });
@@ -62,7 +71,9 @@
                   <a href="#home" class="nav-link" id="homeclick">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link">Classes</a>
+                  <a href="#classes" class="nav-link" id="classClick"
+                    >Classes</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a href="" class="nav-link">Plans &amp; Pricing</a>

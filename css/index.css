@@ -178,3 +178,23 @@ input[type="checkbox"] {
   width: 100%;
   object-fit: cover;
 }
+.about-container-banner {
+  height: 300px;
+  background-color: #a0c0c3;
+}
+.story-container {
+  height: 500px;
+}
+.story-container img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.vision-container {
+  height: 500px;
+}
+.vision-container img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}

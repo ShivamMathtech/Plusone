@@ -60,6 +60,14 @@
             $("#showpages").html(response);
           });
         });
+        $("#priceClick").click(function () {
+          $.ajax({
+            method: "GET",
+            url: "./pages/plans.html",
+          }).then(function (response) {
+            $("#showpages").html(response);
+          });
+        });
       });
     </script>
   </head>
@@ -84,7 +92,9 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link">Plans &amp; Pricing</a>
+                  <a href="#price" class="nav-link" id="priceClick"
+                    >Plans &amp; Pricing</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a href="#about" class="nav-link" id="abtClick">About</a>

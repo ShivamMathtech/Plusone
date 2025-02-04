@@ -198,3 +198,16 @@ input[type="checkbox"] {
   width: 100%;
   object-fit: cover;
 }
+.plans-banner {
+  height: 300px;
+  background-color: #a0c0c3;
+}
+.price-container .card {
+  height: 500px;
+}
+sup {
+  font-weight: 100;
+}
+.num {
+  font-size: 80px;
+}
